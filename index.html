@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginForm</title>
+    <link rel="stylesheet" href="style.css" class="css:">
+</head>
+<body>
+    <div id="overlay">
+        <form onSubmit="ValidateForm(); event.preventDefault();">
+         <h1>Form</h1>
+         <label for="name">Name:</label>
+         <input type="text" id="name" placeholder="YourName">
+         <small class="error"></small>
+         
+ <!--name cannot be blank-->
+         <label for="email">Email:</label>
+         <input type="text" id="email" placeholder="your email">
+         <small class="error"></small>
+ <!-- invalid email-->
+  <label for="passowrd">password</label>
+  <input type="password" id="password" placeholder="password">
+  <small class="error"></small>
+  
+  <label for="contact">contact:</label>
+ <input type="contact" id="contact" placeholder="contact">
+ <small class="error"></small>   
+
+ <label for="address">address:</label>
+ <input type="address" id="address" placeholder="address">
+ <small class="error"></small>
+
+         <label for="message">Messages:</label>
+         <input id="message" placeholder="your Message"></input>
+         <small class="error"></small>
+         <!-- message cannot be blank-->
+ <br>
+         <br>
+         <div>
+ <input type="submit"
+ value="send message" 
+ class="sm">
+ <!--<button>send message</button>-->
+         </div>
+         <br>
+         <p id="success">
+         <!--form  validation successfull-->
+     </p>
+        </form> 
+     </div>
+     <script src="index.js"> </script>
+ 
+</body>
+</html>
